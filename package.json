@@ -1,0 +1,38 @@
+{
+  "name": "jest-rtl-cypress-test-app",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@testing-library/cypress": "^5.0.2",
+    "@testing-library/react": "^9.4.0",
+    "babel-loader": "^8.0.6",
+    "cypress": "^3.8.2",
+    "express": "^4.17.1",
+    "start-server-and-test": "^1.10.6",
+    "file-loader": "^5.0.2",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production",
+    "jest": "jest src",
+    "start": "node server.js",
+    "cypress": "npx cypress run --headless",
+    "e2e": "start-server-and-test start http://localhost:9000 cypress"
+  },
+  "author": "Alex Zimin",
+  "license": "ISC"
+}

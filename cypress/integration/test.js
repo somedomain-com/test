@@ -4,7 +4,7 @@ context('Test an app', () => {
   })
 
   it('Shows a button', () => {
-    cy.queryByText('Nooswq22ting').should('exist')
+    cy.queryByText('Nooswq22asdting').should('exist')
   })
 
   it('Clicks', () => {
